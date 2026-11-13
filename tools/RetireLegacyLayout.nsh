@@ -30,7 +30,10 @@ Function LocalMediaRetireLegacyLayout
  ReadRegStr $R0 HKCU "Software\LocalMedia" "InstallDir"
  StrCmp $R0 "$INSTDIR" 0 lm_legacy_done
  ReadRegStr $R0 HKCU "Software\Microsoft\Windows\CurrentVersion\Uninstall\LocalMedia" "DisplayVersion"
- StrCmp $R0 "1.0.2" 0 lm_legacy_done
+ StrCmp $R0 "1.0.2" lm_legacy_known
+ StrCmp $R0 "1.0.3" lm_legacy_known
+ StrCmp $R0 "1.0.4" 0 lm_legacy_done
+ lm_legacy_known:
  !include "${LEGACY_LOOSE_INCLUDE}"
  lm_legacy_done:
  Pop $R2

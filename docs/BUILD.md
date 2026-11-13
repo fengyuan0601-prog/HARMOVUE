@@ -55,4 +55,10 @@ NuGet 使用锁文件。首次恢复需要访问包源，已有离线包源的�
 
 `tools/installer.nsi` 与相关 NSIS 文件保留安装路径、文件占用预检、相同原生库保留、旧布局迁移和 Data 保护逻辑。使用 `tools/Compile-Installer.ps1` 生成与准确载荷相符的预检/卸载清单，不直接绕过脚本调用旧 NSIS 文件。需另备 NSIS，并显式传入工具路径。
 
-本仓库的 CI 不构建或分发安装包。发布携带第三方运行库的二进制之前，维护者需要完成[原生分发材料](NATIVE_RUNTIME.md)中列出的工作；本地成功构建不能代替这些工作。
+本仓库的 CI 只验证源码和数据逻辑，不自动发布安装器。正式二进制及其[原生分发材料](NATIVE_RUNTIME.md)由版本 Release 提供；构建本身不被当作真实播放、界面或安装验收。
+
+## 使用修改版 TagLibSharp
+
+托管依赖源码包保留 TaglibSharp-2.3.0.0 的完整对应源码、原许可和构建文件。可在独立 checkout 中按其上游入口编译适用 .NET target。将本应用 `src/LocalMedia.csproj` 的 TagLibSharp `PackageReference` 替换为修改项目的 `ProjectReference`，或指向修改程序集的普通 `Reference`（`Private=true`），为该 checkout 重新生成锁文件，再执行正常 publish。不要用旧锁文件伪装依赖未变。
+
+TagLibSharp 会进入单文件应用，不能仅把另一个同名 DLL 放到安装目录就声称替换成功；应重新发布应用、保留 LGPL 文本并实际验证标签读取。完整应用源码和构建入口已提供，未设置阻止重新发布/调试修改版的条款。正式包使用原锁定 NuGet 2.3.0，未声称验证过任意修改版 TagLibSharp。

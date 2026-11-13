@@ -113,6 +113,24 @@ Function LocalMediaValidateInstallDirectory
  IntCmp $0 -1 lm_target_enumerate
  IntOp $0 $0 & 0x10
  StrCmp $0 0 lm_target_reject
+ ; An uninstall intentionally keeps Data and this product marker. Recognize
+ ; that dedicated former installation without admitting arbitrary folders.
+ IfFileExists "$INSTDIR\HARMOVUE.install" 0 lm_target_existing_program
+ StrCpy $LocalMediaCheckedPath "$INSTDIR\HARMOVUE.install"
+ Call LocalMediaCheckPath
+ StrCmp $LocalMediaPathSafe 1 0 lm_target_reject
+ ClearErrors
+ FileOpen $0 "$INSTDIR\HARMOVUE.install" r
+ IfErrors lm_target_reject
+ FileSeek $0 0 END $2
+ FileSeek $0 0 SET
+ StrCmp $2 34 0 lm_marker_close
+ FileRead $0 $1
+ FileClose $0
+ StrCmp $1 "HARMOVUE.LocalMedia.InstallRoot.v1" lm_target_ok lm_target_existing_program
+ lm_marker_close:
+ FileClose $0
+ lm_target_existing_program:
  ; Existing legitimate installations may contain Data, backups and other
  ; user extras. A different nonempty directory is never reused implicitly.
  IfFileExists "$INSTDIR\LocalMedia.exe" 0 lm_target_enumerate

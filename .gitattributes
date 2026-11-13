@@ -9,5 +9,8 @@
 *.png -text
 *.ico -text
 LICENSE -text
-licenses/** -text
+licenses/** -text -whitespace
 native/LICENSE.LGPL -text
+HARMOVUE.install -text
+licenses/native/** linguist-generated=true
+DEPENDENCIES.json linguist-generated=true

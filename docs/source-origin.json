@@ -1,304 +1,365 @@
 {
   "base_version": "1.0.4",
   "application_source_files": 59,
-  "snapshot_date": "2026-11-13",
-  "application_changes": "GPL SPDX headers only; packaging and documentation adapted separately",
+  "snapshot_date": "2026-11-14",
+  "application_changes": "58 C# application bodies unchanged except GPL headers; LibraryViews.cs About dialog adds license and corresponding-source links. Project/version/content, installer and public documentation adapted separately.",
   "private_git_history_published": false,
   "files": [
     {
       "path": "src/BackgroundPaths.cs",
       "original_sha256": "BEA997FBD58502D299AEA5AF1DFD20CF4A3316EBC7CA6F76A5D0E8A5AEE7E262",
-      "change": "License header only; original application body preserved"
+      "change": "License header only; original application body preserved",
+      "public_source_sha256": "0771438166748a5721c7c802539aa125f8e30a4e8485bf719d9fb05fe318ba84"
     },
     {
       "path": "src/Brand.cs",
       "original_sha256": "FB656B11B9D2781A9184453AF1576B1845EE6B8333A63B0EFEB9434CCF127AF0",
-      "change": "License header only; original application body preserved"
+      "change": "License header only; original application body preserved",
+      "public_source_sha256": "7c19e68b332657d53f5c845e6d0fc761e6a477998e0078d738b30f6a0944640f"
     },
     {
       "path": "src/D3D11Warmup.cs",
       "original_sha256": "2311B4BA7E10D8B4FC3EB5D8411516F08AD074015C1CC1693A5934FDD865FE86",
-      "change": "License header only; original application body preserved"
+      "change": "License header only; original application body preserved",
+      "public_source_sha256": "9e444e5b47f05b1af364c588d39b967d3f841b90c14cd6a6c970401a3ed17c4f"
     },
     {
       "path": "src/Diagnostics.cs",
       "original_sha256": "DBCF20EFB800546CB119FF68A8443A58E65A51A68CA085412AFE9D4E750E29A6",
-      "change": "License header only; original application body preserved"
+      "change": "License header only; original application body preserved",
+      "public_source_sha256": "ad7f55ad5bf5d2c1f95bc1e2b3c83e03efee1cb3378e3f4826848cee713de4b8"
     },
     {
       "path": "src/DirectoryMonitor.cs",
       "original_sha256": "CD18597DBBC8AD44D2DA5B8E280E9A5D3B94150E2017628A1BF112E603D37C76",
-      "change": "License header only; original application body preserved"
+      "change": "License header only; original application body preserved",
+      "public_source_sha256": "04bf7a8a0f37942df3a02701451eadb204b18bc41a92f15f60af67e51ffbb213"
     },
     {
       "path": "src/Domain.cs",
       "original_sha256": "B17EA4090FF1DBBD4F6A3AAB4D66ADFB1389197A842C4A83623CB815781AA7D5",
-      "change": "License header only; original application body preserved"
+      "change": "License header only; original application body preserved",
+      "public_source_sha256": "d2322e2cee81341eba4b58daea46b5f1d35b228ee3bc80122548dd7f71fcb8ba"
     },
     {
       "path": "src/EnduranceTest.cs",
       "original_sha256": "99FB1AC59497A45DD3DB4E1001739F553B06A39EDB868E21316DF78148CACB30",
-      "change": "License header only; original application body preserved"
+      "change": "License header only; original application body preserved",
+      "public_source_sha256": "de924f7b836cbc1ea0061c2a408ebcd1319d0129f8d9a98952cd93d52fadca37"
     },
     {
       "path": "src/Enrichment.cs",
       "original_sha256": "871EB26EBD1CC4D12BD6502C36017EC4D6FE5D6DF8F67EE51C9CEAF993B9D619",
-      "change": "License header only; original application body preserved"
+      "change": "License header only; original application body preserved",
+      "public_source_sha256": "08fbfb7ff3e4c5ce6d586b9e211f3172795c5a53c524fe342fefa942a4e88ae2"
     },
     {
       "path": "src/GlassBackdropCache.cs",
       "original_sha256": "26E35EFB92C5EB98CC408D612068CAE2E88DB26FAC2EC9CD6EDB2F7312E0DF35",
-      "change": "License header only; original application body preserved"
+      "change": "License header only; original application body preserved",
+      "public_source_sha256": "c42ef4f6bee49e6513710d6b9c8d187d59a5dbf19bf8395e732b4c442c58cef6"
     },
     {
       "path": "src/GlassCanvas.cs",
       "original_sha256": "D9BF102E57400E830AAED65A8106169BC0F25CC7A6EF08A5DA1DDC35B3E7D211",
-      "change": "License header only; original application body preserved"
+      "change": "License header only; original application body preserved",
+      "public_source_sha256": "6c414926b4654a011f120a1eb469aefe107f15860c729f2ee0af64eefefc4909"
     },
     {
       "path": "src/GridFileAvailability.cs",
       "original_sha256": "976A7537CB526FCEE5F1FEB6317728A7EB7D612CFF507D98ED7B885B16C87BA1",
-      "change": "License header only; original application body preserved"
+      "change": "License header only; original application body preserved",
+      "public_source_sha256": "385b5054a0f0cec7f0b6ae2d3f16c82c68e88bab6c24f196fad8d3f71aca1d0d"
     },
     {
       "path": "src/LibraryDataTest.cs",
       "original_sha256": "58ACA93AD985E2ACD46D995DF1C6314C90D2A1599A5E60FB8A1F0153D69BA796",
-      "change": "License header only; original application body preserved"
+      "change": "License header only; original application body preserved",
+      "public_source_sha256": "77f3a97f5ac2b0c32be03bf1f9cca6ddc2540b58cbf75f84ca6e726f4833cf88"
     },
     {
       "path": "src/LibraryViews.cs",
       "original_sha256": "299A9BF18337137FE61255B8D4B31792DFD04BD86ED5448F70DC736CBAA46EB6",
-      "change": "License header only; original application body preserved"
+      "change": "GPL header plus About version/license/local notice and source links; no playback/library logic change",
+      "public_source_sha256": "48d163997b86a301c4802199e67f526acbd9ea76f63f14e929c00ffb316e817f"
     },
     {
       "path": "src/LocalLyrics.cs",
       "original_sha256": "E09C03AC412D9DCAF1B95772BF9852C3EEF57A024EBEDF9593F684CEBCD905D3",
-      "change": "License header only; original application body preserved"
+      "change": "License header only; original application body preserved",
+      "public_source_sha256": "6476df3f39e21bba79b8cf880fa40e3fb64bdf7c8612f8939910c03744baecc6"
     },
     {
       "path": "src/MainWindow.Chrome.cs",
       "original_sha256": "6709A4203819AA3330D9D2627D0906B44C48CEEFBB884DBA5302D725CF8E57AD",
-      "change": "License header only; original application body preserved"
+      "change": "License header only; original application body preserved",
+      "public_source_sha256": "ebcb2e6dda05b58f998b30b8c7b5bc092545fcceed1a96be6c089a205e35dbed"
     },
     {
       "path": "src/MainWindow.Collections.cs",
       "original_sha256": "162141DC6D3129D983465CFBF9B5607064E76360D6928C35FFE167517448EACE",
-      "change": "License header only; original application body preserved"
+      "change": "License header only; original application body preserved",
+      "public_source_sha256": "b69e898dbf55843d26a425a3ea7a6b81dd42f16feaf18f86b0a26b0b3977f10a"
     },
     {
       "path": "src/MainWindow.cs",
       "original_sha256": "95720900FC00911C14879D19FF4A010EC19B23A2C9239DC0BD6F9CCACFBE97C6",
-      "change": "License header only; original application body preserved"
+      "change": "License header only; original application body preserved",
+      "public_source_sha256": "e482c3c461748c414eebbccf6ba1975eb4ad922e6326610d115af77d9233d4c4"
     },
     {
       "path": "src/MainWindow.LibraryDataCache.cs",
       "original_sha256": "F00C13B6F582894A9ECCD12268E47D8CB8A9A22F5C661E22D3A34A75707578A3",
-      "change": "License header only; original application body preserved"
+      "change": "License header only; original application body preserved",
+      "public_source_sha256": "debd33156ce826127e838ab1fdf2ad124cfa24c8d5039f1bb98ac4276dc8ebe4"
     },
     {
       "path": "src/MainWindow.MusicLibrary.cs",
       "original_sha256": "8D05AB32C7D13D0915DCFB85B9DF79D325466CB64B84AE888D0FFE4291DAD8E1",
-      "change": "License header only; original application body preserved"
+      "change": "License header only; original application body preserved",
+      "public_source_sha256": "943ace4d0137f99e41d0aee42cbfb33b2904fd359ae341de362c08f5ad75125b"
     },
     {
       "path": "src/MainWindow.NavigationCache.cs",
       "original_sha256": "10C01B8C0E3547C15666218D59D09764A7F40188F77DBF1A5D377AB2AC2C9073",
-      "change": "License header only; original application body preserved"
+      "change": "License header only; original application body preserved",
+      "public_source_sha256": "a0c88164a961ec1cbece18cd0dc9aec31c3c4d4da0ff9ee4d4bb01dc59f67933"
     },
     {
       "path": "src/MainWindow.Settings.cs",
       "original_sha256": "D87AC26025B0566FE183C8FC5EC3C0E08079E2C0340C02B223C802417C6CD03A",
-      "change": "License header only; original application body preserved"
+      "change": "License header only; original application body preserved",
+      "public_source_sha256": "209e6f94ec6bed86230092d5a6286ef8aac0849a2c2593efa8633b47fdcbbbb5"
     },
     {
       "path": "src/MainWindow.ShelfPaging.cs",
       "original_sha256": "A409E431E71680EADFC299A74FE72C6CB2C8DD4DE03BCCE6839BE9E7341056E2",
-      "change": "License header only; original application body preserved"
+      "change": "License header only; original application body preserved",
+      "public_source_sha256": "9a7bdd7ec6488bbe9424cc0a8295ee61ea93af567012a8411d2ae8909ddc8c00"
     },
     {
       "path": "src/MainWindow.Transport.cs",
       "original_sha256": "7E342CAF03FD917BB585EDB786783BB7FDCB3A55F07B759BDBA3DF01539E601E",
-      "change": "License header only; original application body preserved"
+      "change": "License header only; original application body preserved",
+      "public_source_sha256": "6e4ab9669d139e4fb67ecc1f9775c2c96f8069f788a704789b5a145210e4271f"
     },
     {
       "path": "src/MainWindow.VideoLibrary.cs",
       "original_sha256": "BC69E4FBF142D53E2D372D64F7D272027501D153F13010D924632FCD18244896",
-      "change": "License header only; original application body preserved"
+      "change": "License header only; original application body preserved",
+      "public_source_sha256": "307571bf3ddf738f95a0c85c3b356a594293056941b8ca578ff6a205b170619d"
     },
     {
       "path": "src/MainWindow.VideoPresentation.cs",
       "original_sha256": "A2D380E4152BDDD3F009EA7D8727978919D626AEFB7E546066C2B3E72F16D1FC",
-      "change": "License header only; original application body preserved"
+      "change": "License header only; original application body preserved",
+      "public_source_sha256": "9673b9f7452cb30ac8efab6523bed69c65880345bd12f9032b666e94ec11385f"
     },
     {
       "path": "src/MainWindow.Views.cs",
       "original_sha256": "F5012A5ACB7BE46E83971C5843E1F8AFEDD750C97E8E734299B2E9570F6555F0",
-      "change": "License header only; original application body preserved"
+      "change": "License header only; original application body preserved",
+      "public_source_sha256": "9649fda7a8239eee2482bfedbc373400c5748ee7e6dad94d0562303e2d4c7fdd"
     },
     {
       "path": "src/MainWindow.Welcome.cs",
       "original_sha256": "D1462DF35F0A013F705B87D9766696EBAC4B4EFB9B1FC6359D183FA15629AC07",
-      "change": "License header only; original application body preserved"
+      "change": "License header only; original application body preserved",
+      "public_source_sha256": "22cab1a3a6838ac1e38e8bc1e805c15029b18e587e5560879574656e0908326d"
     },
     {
       "path": "src/MaterialSurfaceCache.cs",
       "original_sha256": "CBB526327CCF9C11EA327B68A469C6EBEB8835880EAE7B6E62EAC2A285CE9140",
-      "change": "License header only; original application body preserved"
+      "change": "License header only; original application body preserved",
+      "public_source_sha256": "9188dc4826486a8235eaf4b1fb974fbadbdb7b413ff3ca2a48215af438af4db7"
     },
     {
       "path": "src/MediaCache.cs",
       "original_sha256": "AD52927BEF28592E3F53143345026D1D3F8D7CB16C68FDCDAE95E2632C15EBDF",
-      "change": "License header only; original application body preserved"
+      "change": "License header only; original application body preserved",
+      "public_source_sha256": "4b92bf41131e3d9f28d17a3398df8a7f57d64eac71714e162f84507968a94c5b"
     },
     {
       "path": "src/MediaSearch.cs",
       "original_sha256": "24D30C7C10EB008C84C0BF14EDA33F8D133FF9495078726B6A7D4BE7C3EBA964",
-      "change": "License header only; original application body preserved"
+      "change": "License header only; original application body preserved",
+      "public_source_sha256": "c9a5a312045dda523a3ac2306a0afcdba049fb9ccf9ee4727ccc5dce695dd8d7"
     },
     {
       "path": "src/MediaVerification.cs",
       "original_sha256": "AD561E3C89C4ABB0DF8F8E59FC01D5C13A116A8711FD51D17230D9524E0FE70E",
-      "change": "License header only; original application body preserved"
+      "change": "License header only; original application body preserved",
+      "public_source_sha256": "83ae490a09e49a3085a351834e7ab63cd365d6cf397072f5e3b4301a11392596"
     },
     {
       "path": "src/Mpv.CueLoadGuard.cs",
       "original_sha256": "973532823AECE38885BA5CCB6785D269A27DB05566D382D4E8EC986D332E544B",
-      "change": "License header only; original application body preserved"
+      "change": "License header only; original application body preserved",
+      "public_source_sha256": "53a05ec055e73ca99e027f7a873a73c052598cb0fdc4ae17ef5b9f8de2d5fa09"
     },
     {
       "path": "src/NativeTintSurface.cs",
       "original_sha256": "046AEA3916249086C4499468F2E94370B162ED62A8F694E7AF124BC0122C3F2F",
-      "change": "License header only; original application body preserved"
+      "change": "License header only; original application body preserved",
+      "public_source_sha256": "a15d09ddae408a94800902ebac37042e1322d93b7405e3f0f0aa701f38c5a803"
     },
     {
       "path": "src/NativeWarmup.cs",
       "original_sha256": "7A5F89C019AD0BE90BC76128FF2484E3E41D1506D0B54ECC9849F0D8F78462BC",
-      "change": "License header only; original application body preserved"
+      "change": "License header only; original application body preserved",
+      "public_source_sha256": "03503f217e0325b74c66d9ed7671aa796e05b4c62d84d53039e63bf09212659e"
     },
     {
       "path": "src/Playback.cs",
       "original_sha256": "26155BF036DB7A040CD58A79B1C6D0958F6321ECB0F541A6BAEE83E21A5F064C",
-      "change": "License header only; original application body preserved"
+      "change": "License header only; original application body preserved",
+      "public_source_sha256": "2289a9a980f3e54a7060e89c789a79f5c64823397c397515899aebda2b47d1ff"
     },
     {
       "path": "src/Playback.Queue.cs",
       "original_sha256": "97D888BBB154385B5F91FBF84EA1ABD6ED5A6F4655484CB0D2B8FE0ADC3AA3CE",
-      "change": "License header only; original application body preserved"
+      "change": "License header only; original application body preserved",
+      "public_source_sha256": "243add8dca425972cd90fa0a587481b8edb9adcf2c184aff9206a215901974aa"
     },
     {
       "path": "src/Playback.Subtitles.cs",
       "original_sha256": "9993C61A9C09DA2E48E4AAE79C932AD58E84FE3E55620A7817633B8509ADCADA",
-      "change": "License header only; original application body preserved"
+      "change": "License header only; original application body preserved",
+      "public_source_sha256": "45c1c2c853b76c1c4eb2b66ded47a9317cac7ea60546136a8d21263db36f316e"
     },
     {
       "path": "src/PlaybackTransitionTest.cs",
       "original_sha256": "69D593D80545F80B2E64F066FCE66CBCF3D21C28605EC36E0FD11F543DACC442",
-      "change": "License header only; original application body preserved"
+      "change": "License header only; original application body preserved",
+      "public_source_sha256": "65261d5a7bbdc3b2e4f2a5d1856731b30a0316649b79f2179f31ebf34cfdc67c"
     },
     {
       "path": "src/PlaylistFiles.cs",
       "original_sha256": "46BD6578553035A03F579F2B827A18C460996C236EDBA1E38D2C8CFFA584DB78",
-      "change": "License header only; original application body preserved"
+      "change": "License header only; original application body preserved",
+      "public_source_sha256": "857c9a1f017a8fdb4743d6c7d6e4d9e773d6c3991c0dcb429fdd1d20af77a7c4"
     },
     {
       "path": "src/Program.cs",
       "original_sha256": "FC3E50B6E813B884E53B58A2D957629C6732EE5DCD02AEAF1A25EE4ADBB7AD86",
-      "change": "License header only; original application body preserved"
+      "change": "License header only; original application body preserved",
+      "public_source_sha256": "03c7b15c57e274101cb44606ce37073d1191cb18b135976b2262ce9400af533d"
     },
     {
       "path": "src/SearchTest.cs",
       "original_sha256": "5EB8B781C06E593E88C008F98A7BD3EABD3E9375164E65001623E9821A9FF728",
-      "change": "License header only; original application body preserved"
+      "change": "License header only; original application body preserved",
+      "public_source_sha256": "b5520cef522391096894b0a3fcb1989499324c12d79a2e71405c7b99f5a2edf8"
     },
     {
       "path": "src/SelfTest.cs",
       "original_sha256": "C0CF1F16BE59A934171103CF0449C8959C4DDC8AC7BB2235902411A2A4AA5150",
-      "change": "License header only; original application body preserved"
+      "change": "License header only; original application body preserved",
+      "public_source_sha256": "5e99932cc98d5691be040542aa770b3e4ad66e49ec259ab86880b18229f4a79d"
     },
     {
       "path": "src/ServiceTest.cs",
       "original_sha256": "4AD4C196C626B8495D764D43220A46C113390EF170F217E4EE42BB54B507B0FA",
-      "change": "License header only; original application body preserved"
+      "change": "License header only; original application body preserved",
+      "public_source_sha256": "ea828c430b58b738b70b92152e09e618d127e02eda5c5da6252d1dda1b574f37"
     },
     {
       "path": "src/SettingsControls.cs",
       "original_sha256": "D2E9A2E3778028E3C93846A93DC0EBF9ECDBFB9BD2BE2DA8883E8BE89D412E49",
-      "change": "License header only; original application body preserved"
+      "change": "License header only; original application body preserved",
+      "public_source_sha256": "83a67733b384edc89fedcbf36ccfabc82ee4a29084d91ce6ff431fb8d869e864"
     },
     {
       "path": "src/SingleInstanceInbox.cs",
       "original_sha256": "E546D4CC1D74A647D9A25DD20E20CE5CAFB4709941B9CF95C18695082D28CED3",
-      "change": "License header only; original application body preserved"
+      "change": "License header only; original application body preserved",
+      "public_source_sha256": "0d5700fff459d560d32986ddec91800d6c4c213981ca608b3c29fa436ac4b775"
     },
     {
       "path": "src/StartupWindow.cs",
       "original_sha256": "7208F49D609149E1DDFABFBABC3877F053C093EC7B76EE57F3015C922B429EE5",
-      "change": "License header only; original application body preserved"
+      "change": "License header only; original application body preserved",
+      "public_source_sha256": "5cfc47167a218e399616ae4d93259c6034cb1044c3063265dfaf5d0f5d9f6afd"
     },
     {
       "path": "src/Store.Indexes.cs",
       "original_sha256": "38D56FC0A2D39BA49C9BF1C37FD169DA234A622EECD7C051060933F4EBAE5802",
-      "change": "License header only; original application body preserved"
+      "change": "License header only; original application body preserved",
+      "public_source_sha256": "4fe5a0f8f7a4a5e06a3498044cca38c33de5ff7802155ef00092ba8cf0315b65"
     },
     {
       "path": "src/Store.Restore.cs",
       "original_sha256": "B7F1C2A05628E411234B308ACB54619B3CB90974575006BEFA906D04DB954243",
-      "change": "License header only; original application body preserved"
+      "change": "License header only; original application body preserved",
+      "public_source_sha256": "3a1e4487a9969c219a14ba5ba9e46a4dd544845d614866db1172f66d522222b9"
     },
     {
       "path": "src/Subtitles.cs",
       "original_sha256": "82CE1E8F995D69377CD3ADE173C147C7DEA7C83429763595326D2D0DDB9B43D0",
-      "change": "License header only; original application body preserved"
+      "change": "License header only; original application body preserved",
+      "public_source_sha256": "a3b48d977fb259461e7251be5b93985328a4eab72c7cff2bd04892e392972d7f"
     },
     {
       "path": "src/SubtitleServiceTest.cs",
       "original_sha256": "C02D600F9C0F420016ECF61826A0ACEBB5A3201DBE01748E2CF4C266E4E51D83",
-      "change": "License header only; original application body preserved"
+      "change": "License header only; original application body preserved",
+      "public_source_sha256": "81c954d885c33c836564d94a601c701d30a534f6f16f81de240863f73549d096"
     },
     {
       "path": "src/SystemCheck.cs",
       "original_sha256": "FC2AD55F551E80C2E6C707EB32CC6170D4F111769C4C7A4FB70752622C89D10D",
-      "change": "License header only; original application body preserved"
+      "change": "License header only; original application body preserved",
+      "public_source_sha256": "9b37441528fa8f317750bdc51311461614ae4ee92b5958e2097db2abf7044e7a"
     },
     {
       "path": "src/SystemIntegration.cs",
       "original_sha256": "42AD054B4CE16ECC55399FF5421836D1797E89920A54783D4D37FD4D5E9EC8DC",
-      "change": "License header only; original application body preserved"
+      "change": "License header only; original application body preserved",
+      "public_source_sha256": "0d40d9a1126c553d9bc28a575b02560ff81cf847eb4f647386f9a5c92fb4c3b4"
     },
     {
       "path": "src/UiAccessibility.cs",
       "original_sha256": "C8FC6EB9248C636939D5E2A1F71CA8A81915329641919A236E28687DD7FD46B5",
-      "change": "License header only; original application body preserved"
+      "change": "License header only; original application body preserved",
+      "public_source_sha256": "9a4caacf9c2e1fb1f3746760853bdd80ee8be11faa4170d330bdebd7d10f5056"
     },
     {
       "path": "src/UiMenus.cs",
       "original_sha256": "7F4C9AB217AC5946DA758E38A642AE69C2279297EB3148B44B6B0C854070DCA4",
-      "change": "License header only; original application body preserved"
+      "change": "License header only; original application body preserved",
+      "public_source_sha256": "41e06a28b9a17e042f3f050ee9e129824ebf6fc470960db2e0d01f47bc9b2325"
     },
     {
       "path": "src/UiMotion.cs",
       "original_sha256": "A37C7D0853549D2F1F5FA7705202C5BC4EF8A0A8BA3FE7FFF94A36F433189569",
-      "change": "License header only; original application body preserved"
+      "change": "License header only; original application body preserved",
+      "public_source_sha256": "3a6294c0372cab6424cd3cc566c0b99bf0e15b68d092b78d7de76c7b007c1578"
     },
     {
       "path": "src/UiPerformance.cs",
       "original_sha256": "DD60189A79AEF7E6FD170C7E732DAD9BB72D082A32526FFDCC2CC49209EB4213",
-      "change": "License header only; original application body preserved"
+      "change": "License header only; original application body preserved",
+      "public_source_sha256": "f5f2e6b097e9e2d8f440885399d501f352aea34bd8dbec18dfee1bf34fcb7972"
     },
     {
       "path": "src/UiTheme.cs",
       "original_sha256": "0CC7015C712FA84F03CCD94A9B00D22D39FE15EF130459F2C9E4B5D6CC7D4F8B",
-      "change": "License header only; original application body preserved"
+      "change": "License header only; original application body preserved",
+      "public_source_sha256": "e7dc01b34ea8ab0ea7bf7b9f92fd8ab16e2326db85a022d19fbc619215141c90"
     },
     {
       "path": "src/VirtualMediaShelf.cs",
       "original_sha256": "5AF6CB6202CBFD1FF0AFA773B0EDF14A69EF60853454D92ED04A235B9B35778C",
-      "change": "License header only; original application body preserved"
+      "change": "License header only; original application body preserved",
+      "public_source_sha256": "6d35ba374d862feda0f85040e98a9728d96036ee24bf1b73e95c9722a3025193"
     },
     {
       "path": "src/WavPackInfo.cs",
       "original_sha256": "BD5BD5B1D2351049C1244E646CEA93211D19CA7DC5B7C60F9943A2FDDB86444C",
-      "change": "License header only; original application body preserved"
+      "change": "License header only; original application body preserved",
+      "public_source_sha256": "e0f3e22e133dc946c90457624311dba0db05dba6a40f8089e9e9f517ff4afdf7"
     }
-  ]
+  ],
+  "public_version": "1.0.5",
+  "application_pdb_source_checksum_matches": 59
 }

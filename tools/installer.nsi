@@ -7,7 +7,7 @@ AllowSkipFiles off
 !include "MUI2.nsh"
 !include "KeepIdenticalNative.nsh"
 !ifndef APP_VERSION
- !define APP_VERSION "1.0.4"
+ !define APP_VERSION "1.0.5"
 !endif
 !ifndef PAYLOAD_DIR
  !define PAYLOAD_DIR "..\release\portable"

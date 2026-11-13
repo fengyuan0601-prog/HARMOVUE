@@ -31,10 +31,12 @@ foreach($file in $files){
  $escaped=$relative.Replace('$','$$')
  $lines.Add((' Push "$INSTDIR\{0}"' -f $escaped))
  $lines.Add(' Call LocalMediaProbeTarget')
- $uninstall.Add((' Push "$INSTDIR\{0}"' -f $escaped))
- $uninstall.Add(' Call un.LocalMediaDeleteOwnedFile')
- $uninstallPreflight.Add((' Push "$INSTDIR\{0}"' -f $escaped))
- $uninstallPreflight.Add(' Call un.LocalMediaProbeOwnedFile')
+ if($relative -ne 'HARMOVUE.install'){
+  $uninstall.Add((' Push "$INSTDIR\{0}"' -f $escaped))
+  $uninstall.Add(' Call un.LocalMediaDeleteOwnedFile')
+  $uninstallPreflight.Add((' Push "$INSTDIR\{0}"' -f $escaped))
+  $uninstallPreflight.Add(' Call un.LocalMediaProbeOwnedFile')
+ }
 }
 $directories=@($entries | Where-Object {$_.PSIsContainer} | Sort-Object { $_.FullName.Length } -Descending)
 foreach($directory in $directories){
@@ -53,7 +55,7 @@ $uninstallPreflightInclude=Join-Path $evidence 'payload-uninstall-preflight.nsh'
 $legacyInclude=Join-Path $evidence 'legacy-loose-cleanup.nsh'
 $legacyCommands=[Collections.Generic.List[string]]::new()
 $ownedPaths=[Collections.Generic.HashSet[string]]::new($paths,[StringComparer]::OrdinalIgnoreCase)
-foreach($line in Get-Content -LiteralPath (Join-Path $PSScriptRoot 'LegacyLoosePayload-1.0.2.sha256')){
+foreach($line in @(Get-Content -LiteralPath (Join-Path $PSScriptRoot 'LegacyLoosePayload-1.0.2.sha256')) + @(Get-Content -LiteralPath (Join-Path $PSScriptRoot 'LegacyPayload-1.0.4.sha256'))){
  if(!$line -or $line.StartsWith('#')){continue}
  if($line -notmatch '^(?<hash>[0-9A-F]{64})  (?<name>.+)$'){throw 'Invalid legacy payload manifest.'}
  $relative=$Matches.name; $expected=$Matches.hash

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HARMOVUE · 开源许可</title>
+<style>:root{color-scheme:light dark}body{font:16px/1.75 "Segoe UI","Microsoft YaHei UI",sans-serif;max-width:880px;margin:48px auto;padding:0 24px;color:light-dark(#24262b,#e4e5e8);background:light-dark(#fafaf9,#191a1d)}h1{font-size:30px;font-weight:500;line-height:1.3}h2{font-size:21px;font-weight:500;margin-top:36px}a{color:light-dark(#285a86,#a9cae6)}table{border-collapse:collapse;width:100%;font-size:14px}td,th{text-align:left;vertical-align:top;padding:12px;border-bottom:1px solid #8884}th{font-weight:500}code{font-size:13px}small{color:light-dark(#5f646d,#b3b7c0)}</style>
+<h1>HARMOVUE · 开源许可</h1>
+<p>HARMOVUE 自有代码以 <a href="LICENSE">GPL-3.0-or-later</a> 发布。第三方组件保留自己的版权、许可和免责声明，未由本项目重新授权。</p>
+<p><a href="https://github.com/fengyuan0601-prog/HARMOVUE/releases/tag/v1.0.5">获取本版本源码、原生依赖源码与重链接材料</a> · <a href="https://github.com/fengyuan0601-prog/HARMOVUE">应用源码仓库</a></p>
+<h2>播放内核</h2>
+<p>本软件使用 libmpv 和 FFmpeg。FFmpeg 的本次配置为 <strong>LGPL-3.0-or-later</strong>（GPL=0、NONFREE=0、VERSION3=1），源码、唯一的 AC3 构建清单修改、配置、静态输入和重链接入口与安装包在同一 Release 提供。libmpv 的实际静态组成包括下表各家族，详细身份、源码版本和成员证据见 <a href="DEPENDENCIES.json">依赖索引</a>。</p>
+<table><tr><th>组件</th><th>许可与说明</th></tr>
+<tr><td>mpv、libplacebo、libbluray、libudfread、FriBidi、libiconv、GME、SoXR、zvbi</td><td>LGPL-2.1-or-later 的库代码及各文件例外；与 LGPLv3 组成结合的本次内核按 LGPLv3 条件分发</td></tr>
+<tr><td>FFmpeg、aribb24</td><td>LGPL-3.0-or-later；FFmpeg 的 IJG 文件未修改</td></tr>
+<tr><td>Subrandr</td><td>MPL-2.0，原样保留 MPL 源码与许可；Rust 依赖文本随附</td></tr>
+<tr><td>FreeType</td><td>选择 FreeType License（FTL）；Portions of this software are copyright © 1996–2026 The FreeType Project (https://freetype.org). All rights reserved.</td></tr>
+<tr><td>libass、libaribcaption、HarfBuzz、fontconfig、libunibreak</td><td>ISC / MIT / Zlib，详见逐组件原文</td></tr>
+<tr><td>dav1d、libvpx、OpenH264、JPEG XL、Highway、Brotli、uavs3d、OpenMPT、Opus、Vorbis、Ogg</td><td>各自的 BSD / MIT 及所含文件声明；Highway 选择 BSD-3-Clause。此处不声称享有 Cisco 所分发二进制的专属条款</td></tr>
+<tr><td>LCEVCdec</td><td>BSD-3-Clause-Clear；保留 V-Nova 的额外声明及无专利许可条款，不将其重新授权为 GPL</td></tr>
+<tr><td>OpenCORE AMR、OpenSSL 3、shaderc、SPIRV-Tools / Headers / Cross、glslang、OpenCL、oneVPL、libva、硬件头文件</td><td>各自 Apache-2.0 / MIT / BSD 等文件许可。glslang 多许可原文与嵌套组成均保留</td></tr>
+<tr><td>LCMS2、zimg、libpng、zlib、libxml2、XZ/liblzma、bzip2、LuaJIT</td><td>分别保留 MIT / WTFPL / Libpng / Zlib / 0BSD / bzip2 等文本。LCMS2 未分配的可选 GPL 插件属于重链接输入，不冒充已链接运行代码</td></tr>
+<tr><td>GCC / libstdc++ / libgomp、MinGW-w64 / winpthreads、Rust</td><td>GCC Runtime Library Exception、MinGW 各文件 ZPL/MIT/公有领域声明、Rust 及实际依赖的许可原文均保留</td></tr></table>
+<p>This software is based in part on the work of the Independent JPEG Group.</p>
+<h2>应用与安装器依赖</h2>
+<table><tr><th>组件</th><th>许可</th></tr>
+<tr><td>.NET / Windows Desktop 10.0.13、Microsoft.Data.Sqlite 10.0.13、Windows SDK / WinRT 投影</td><td><a href="licenses/dotnet-LICENSE.txt">MIT</a>、<a href="licenses/dotnet-ThirdPartyNotices.txt">.NET 第三方声明</a>、<a href="licenses/CsWinRT-MIT.txt">CsWinRT</a></td></tr>
+<tr><td>SQLitePCLRaw 3.0.5、SQLite 3.53.4</td><td><a href="licenses/Apache-2.0.txt">Apache-2.0</a>；Copyright 2014-2025 SourceGear, LLC。<a href="licenses/SQLite-Public-Domain.txt">SQLite 公有领域</a></td></tr>
+<tr><td>TagLibSharp 2.3.0</td><td><a href="licenses/TagLibSharp-LGPL.txt">LGPL-2.1-only</a>；Copyright (c) 2006-2007 Brian Nickel. Copyright (c) 2009-2020 Other contributors。同一 Release 提供对应标签的完整源码</td></tr>
+<tr><td>ToolGood.Words.Pinyin 3.1.0.4</td><td><a href="licenses/ToolGood.Words.Pinyin-MIT.txt">MIT</a></td></tr>
+<tr><td>NSIS 3.04 安装器</td><td><a href="licenses/NSIS-COPYING.txt">NSIS 原文</a>；本安装器选择 zlib stub，未选择 CPL 的 LZMA 压缩模块</td></tr></table>
+<h2>完整文本与修改权利</h2>
+<p><a href="licenses/native/THIRD_PARTY_TEXTS.txt">原生依赖完整许可、归属与 notice</a><br><a href="licenses/native/Rust-Standard-Library.html">Rust 标准库的完整第三方声明</a><br><a href="licenses/native/SOURCE_FILE_NOTICES.txt">源文件声明汇编</a>（含额外源码、测试和构建上下文，出现于此不代表全部链接到运行库）</p>
+<p>您可以依照各组件的许可研究、调试、修改、替换与重新链接这些组件。应用源码、native-prewarm 源码、完整原生材料、托管依赖源码及具体重建方法均可在版本 Release 免费下载。<code>libmpv-2.dll</code> 保持可替换文件，未加入阻止调试或 LGPL 修改验证的条款。TagLibSharp 打包进单文件应用；替换修改版时须按随附构建说明重新发布应用。</p>
+<p><small>完整上游源码保留原始版权与文件级许可。系统 DLL、设备驱动和用户自行导入的媒体不随 HARMOVUE 分发。</small></p>
+</html>

@@ -27,7 +27,11 @@ A Windows local music and video player built with C#, WinForms and libmpv. One l
 
 ## 获取与构建
 
-**本次是源码首发，尚不提供公开安装包。** 当前仓库不携带 libmpv 或历史安装器；运行构建需要自行提供 Windows x64 的 `libmpv-2.dll`。原生依赖的公开分发准备见[运行库说明](docs/NATIVE_RUNTIME.md)。
+在 [GitHub Release 下载 Windows x64 安装包](https://github.com/fengyuan0601-prog/HARMOVUE/releases/tag/v1.0.5)，文件名为 `HARMOVUE-1.0.5-win-x64-Setup.exe`。安装包自带播放运行库与 .NET，无需另外安装解码器。请同时核对该 Release 的 `SHA256SUMS.txt`；安装包目前未进行代码签名。
+
+新安装优先使用可用的 E 盘，没有可用 E 盘（包括 E 为光驱）的电脑使用当前用户的标准程序目录；已有安装沿用原路径，也可在向导中选择专用目录。原媒体默认只读，卸载保留播放器数据。
+
+本软件使用 FFmpeg（本次配置为 LGPL-3.0-or-later）。[同一 Release](https://github.com/fengyuan0601-prog/HARMOVUE/releases/tag/v1.0.5) 提供对应的原生源码、修改、构建配置、重链接材料和托管依赖源码；说明见[运行库文档](docs/NATIVE_RUNTIME.md)。大体积源码材料放在 Release，Git 仓库不包含二进制、媒体或个人资料库。
 
 Windows x64、.NET SDK **10.0.402**、PowerShell 7：
 
@@ -53,7 +57,7 @@ cd HARMOVUE
 
 双击歌曲或视频播放，从右上角导入文件或目录，使用底部队列按钮展开当前队列。详细操作与数据位置见[使用说明](USAGE.md)。
 
-本仓库基于 1.0.4 应用源码，补充开源许可证、可移植构建入口和社区文档。图中是该版本实际运行的合成测试库，不是设计稿。搜索/数据 CI 与真实播放、音频输出、可见画面及实体机冷启动分别记录，不能相互替代。格式、设备和历史实测范围见[验证范围](docs/VALIDATION.md)。
+1.0.5 延续 1.0.4 的播放内核、双主题布局和启动动画，补充公开分发材料及许可入口。图中是实际运行的合成测试库。搜索/数据 CI 与真实播放、音频输出、可见画面及实体机冷启动分别记录，不能相互替代。格式、设备和实测范围见[验证范围](docs/VALIDATION.md)及版本 Release 的验收记录。
 
 ## 参与
 

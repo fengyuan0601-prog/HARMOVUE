@@ -11,6 +11,25 @@ Var InstallCheckOnly
 !include "InstallTargetSafety.nsh"
 
 Function .onInit
+ ; Keep an explicit/registered target. Prefer E: on the development machine;
+ ; a new user without E: gets a writable standard per-user location.
+ ReadRegStr $0 HKCU "Software\LocalMedia" "InstallDir"
+ StrCmp $0 "" 0 lm_default_ready
+ StrCmp $INSTDIR "E:\Codex\Programs\LocalMedia" 0 lm_default_ready
+ ; A DVD mounted as E: is not a usable program/data volume.
+ System::Call 'kernel32::GetDriveTypeW(w "E:\") i.r0'
+ StrCmp $0 2 lm_default_check_drive
+ StrCmp $0 3 lm_default_check_drive lm_default_no_drive
+ lm_default_check_drive:
+ System::Call 'kernel32::GetFileAttributesW(w "E:\") i.r0'
+ IntCmp $0 -1 lm_default_no_drive lm_default_ready lm_default_ready
+ lm_default_no_drive:
+ System::Call 'kernel32::GetCommandLineW() w.r0'
+ ClearErrors
+ ${GetOptions} $0 "/D=" $1
+ IfErrors 0 lm_default_ready
+ StrCpy $INSTDIR "$LOCALAPPDATA\Programs\HARMOVUE"
+ lm_default_ready:
  StrCpy $InstallCheckOnly 0
  ${GetParameters} $0
  ClearErrors

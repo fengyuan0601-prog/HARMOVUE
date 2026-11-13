@@ -43,5 +43,5 @@ try{
  & $DotNet @publish
  if($LASTEXITCODE){throw 'Publish failed.'}
 }finally{Pop-Location}
-[ordered]@{SourceOnly=[bool]$SourceOnly;NativeSHA256=$nativeHash;WarmupHelperIncluded=(!$SourceOnly -and (Test-Path -LiteralPath $helper));Sdk=$sdk;PublicBinaryReleaseApproved=$false}|ConvertTo-Json|Set-Content -LiteralPath (Join-Path $OutputDirectory 'BUILD_PROVENANCE.json') -Encoding utf8
+[ordered]@{SourceOnly=[bool]$SourceOnly;NativeSHA256=$nativeHash;WarmupHelperIncluded=(!$SourceOnly -and (Test-Path -LiteralPath $helper));Sdk=$sdk;DistributionReview='See versioned Release materials and validation; a build alone is not a release approval.'}|ConvertTo-Json|Set-Content -LiteralPath (Join-Path $OutputDirectory 'BUILD_PROVENANCE.json') -Encoding utf8
 Write-Output ('Build output: '+$OutputDirectory)

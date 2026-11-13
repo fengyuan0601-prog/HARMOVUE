@@ -41,12 +41,19 @@ public sealed partial class MainWindow
 
     void AboutBrand()
     {
-        using var dialog = new SettingsDialog("关于 HARMOVUE", "音乐与视频，在同一个地方。", new Size(620, 420), dpiFactor, Font, "关闭");
+        using var dialog = new SettingsDialog("关于 HARMOVUE", "音乐与视频，在同一个地方。", new Size(620, 448), dpiFactor, Font, "关闭");
         using var logo = Brand.Logo();
         var details = new Label { Dock = DockStyle.Fill, Padding = new Padding(0, (int)(20 * dpiFactor), 0, 0), Font = Font, ForeColor = UiTheme.Muted,
-            Text = $"{ProductVersionLabel} · by IDEORIN\nlibmpv 播放内核 · 媒体原文件默认只读\n\n兼容性与未验证范围见随附说明。\n升级保留现有 LocalMedia 数据。" };
+            Text = $"{ProductVersionLabel} · by IDEORIN\nGPL-3.0-or-later\n\n使用 libmpv 与 FFmpeg（LGPL-3.0-or-later）\n第三方版权、完整许可与对应源码见下方入口" };
+        var actions = new SettingsActionGroup { Dock = DockStyle.Bottom, Height = (int)(40 * dpiFactor) };
+        void Open(string path) => Try(() => System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(path) { UseShellExecute = true }));
+        var licenses = new UiButton { Text = "开源许可", AccessibleName = "查看开源许可", Style = UiButtonStyle.Quiet };
+        licenses.Click += (_, _) => Open(Path.Combine(AppContext.BaseDirectory, "OPEN_SOURCE.html"));
+        var sources = new UiButton { Text = "获取源码", AccessibleName = "获取对应源码", Style = UiButtonStyle.Quiet };
+        sources.Click += (_, _) => Open("https://github.com/fengyuan0601-prog/HARMOVUE/releases/tag/v1.0.5");
+        actions.Add(licenses, 120); actions.Add(sources, 120);
         var image = new PictureBox { Image = logo, Dock = DockStyle.Top, Height = (int)(60 * dpiFactor), SizeMode = PictureBoxSizeMode.Zoom, BackColor = UiTheme.Surface };
-        dialog.Body.Controls.Add(details); dialog.Body.Controls.Add(image);
+        dialog.Body.Controls.Add(details); dialog.Body.Controls.Add(actions); dialog.Body.Controls.Add(image);
         dialog.ShowDialog(this);
     }
 
