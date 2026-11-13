@@ -1,0 +1,23 @@
+name: 问题反馈
+description: 报告可复现的问题
+body:
+  - type: textarea
+    id: behavior
+    attributes:
+      label: 实际行为与预期
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 最小复现步骤
+      description: 优先使用合成样本；不要上传个人数据库、私密日志或未授权媒体。
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: 环境
+      description: Windows版本、缩放、源码提交、libmpv来源和版本、相关设备。
+    validations:
+      required: true

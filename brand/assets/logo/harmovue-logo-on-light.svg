@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="288" viewBox="0 0 1320 288" role="img" aria-labelledby="title desc">
+  <title id="title">HARMOVUE logo for light backgrounds</title>
+  <desc id="desc">Sea-glass H with midnight-navy HARMOVUE geometric outlined wordmark. Transparent canvas. No font dependency.</desc>
+  <defs>
+    <linearGradient id="left-pillar" x1="12" y1="8" x2="71" y2="256" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#EEFFDF"/>
+      <stop offset=".30" stop-color="#90EFDA"/>
+      <stop offset=".52" stop-color="#39CECC"/>
+      <stop offset=".70" stop-color="#0797AA"/>
+      <stop offset="1" stop-color="#52DCCF"/>
+    </linearGradient>
+    <linearGradient id="right-pillar" x1="193" y1="0" x2="250" y2="256" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#A3F5E3"/>
+      <stop offset=".36" stop-color="#35D2CF"/>
+      <stop offset=".55" stop-color="#0094AA"/>
+      <stop offset="1" stop-color="#34D2C9"/>
+    </linearGradient>
+    <linearGradient id="wave" x1="10" y1="155" x2="244" y2="110" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#18B8C1"/>
+      <stop offset=".28" stop-color="#53D9D1"/>
+      <stop offset=".65" stop-color="#92EFDA"/>
+      <stop offset="1" stop-color="#BAF9DC"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(16 16)"><path d="M37 0C57.435 0 74 16.565 74 37V219C74 239.435 57.435 256 37 256C16.565 256 0 239.435 0 219V37C0 16.565 16.565 0 37 0Z" fill="url(#left-pillar)"/>
+    <path d="M219 0C239.435 0 256 16.565 256 37V219C256 239.435 239.435 256 219 256C198.565 256 182 239.435 182 219V37C182 16.565 198.565 0 219 0Z" fill="url(#right-pillar)"/>
+    <path d="M0 144C14 101 42 78 72 78C104 78 145 106 184 118C217 128 248 129 256 102C252 138 224 167 195 172C165 177 129 154 94 145C52 134 16 149 0 190Z" fill="url(#wave)"/></g>
+  <g transform="translate(350 89) scale(1.1)" fill="#101923" fill-rule="evenodd">
+      <path transform="translate(0 0)" d="M0 0H21V39H65V0H86V100H65V60H21V100H0Z"/>
+      <path transform="translate(101 0)" d="M0 100L43 0H65L108 100H85L76 78H32L23 100ZM40 58H68L54 23Z"/>
+      <path transform="translate(224 0)" d="M0 0H47C72 0 85 13 85 33C85 47 79 57 66 63L90 100H65L45 68H21V100H0ZM21 19V49H43C56 49 64 44 64 34C64 24 56 19 43 19Z"/>
+      <path transform="translate(329 0)" d="M0 100V0H22L54 56L86 0H108V100H87V36L63 80H45L21 36V100Z"/>
+      <path transform="translate(452 0)" d="M53-2C84-2 106 20 106 50C106 80 84 102 53 102C22 102 0 80 0 50C0 20 22-2 53-2ZM53 19C35 19 22 32 22 50C22 68 35 81 53 81C71 81 84 68 84 50C84 32 71 19 53 19Z"/>
+      <path transform="translate(573 0)" d="M0 0H24L50 73L76 0H100L62 100H38Z"/>
+      <path transform="translate(688 0)" d="M0 0H22V58C22 73 29 81 43 81C57 81 64 73 64 58V0H86V60C86 87 70 102 43 102C16 102 0 87 0 60Z"/>
+      <path transform="translate(789 0)" d="M0 0H70V20H22V40H64V60H22V80H70V100H0Z"/>
+    </g>
+</svg>
+

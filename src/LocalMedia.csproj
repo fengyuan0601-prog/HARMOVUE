@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows10.0.19041.0</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <ApplicationHighDpiMode>PerMonitorV2</ApplicationHighDpiMode>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <PlatformTarget>x64</PlatformTarget>
+    <Version>1.0.4</Version>
+    <Product>HARMOVUE</Product>
+    <Title>HARMOVUE</Title>
+    <ApplicationIcon>..\brand\assets\icon\harmovue-app.ico</ApplicationIcon>
+    <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
+    <Authors>HARMOVUE contributors</Authors>
+    <PackageLicenseExpression>GPL-3.0-or-later</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/fengyuan0601-prog/HARMOVUE</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <MpvLibraryPath Condition="'$(MpvLibraryPath)' == ''">$(MSBuildProjectDirectory)\..\native\libmpv-2.dll</MpvLibraryPath>
+    <NativeWarmupPath Condition="'$(NativeWarmupPath)' == ''">$(MSBuildProjectDirectory)\..\native\Harmovue.NativePrewarm.exe</NativeWarmupPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="10.0.13" />
+    <PackageReference Include="SQLitePCLRaw.bundle_e_sqlite3" Version="3.0.5" />
+    <PackageReference Include="TagLibSharp" Version="2.3.0" />
+    <PackageReference Include="ToolGood.Words.Pinyin" Version="3.1.0.4" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(NativeWarmupPath)" Link="Harmovue.NativePrewarm.exe" CopyToOutputDirectory="PreserveNewest" ExcludeFromSingleFile="true" Condition="Exists('$(NativeWarmupPath)')" />
+    <Content Include="$(MpvLibraryPath)" Link="libmpv-2.dll" CopyToOutputDirectory="PreserveNewest" Condition="Exists('$(MpvLibraryPath)')" />
+    <Content Include="..\native\LICENSE.LGPL" Link="licenses\mpv-LICENSE.LGPL" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\licenses\**\*" Link="licenses\%(RecursiveDir)%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="..\README.md;..\USAGE.md;..\RELEASE_NOTES.md;..\THIRD_PARTY_NOTICES.md" Link="%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\brand\assets\icon\harmovue-app.ico" LogicalName="Brand.Icon" />
+    <EmbeddedResource Include="..\brand\assets\mark\harmovue-mark.png" LogicalName="Brand.Mark" />
+    <EmbeddedResource Include="..\brand\assets\logo\harmovue-logo-on-dark.png" LogicalName="Brand.Logo" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\LICENSE" Link="LICENSE" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

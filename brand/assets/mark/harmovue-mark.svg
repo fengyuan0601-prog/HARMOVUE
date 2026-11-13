@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="288" height="288" viewBox="0 0 288 288" role="img" aria-labelledby="title desc">
+  <title id="title">HARMOVUE mark</title>
+  <desc id="desc">Sea-glass wave H. Transparent canvas. Vector paths and gradients.</desc>
+  <defs>
+    <linearGradient id="left-pillar" x1="12" y1="8" x2="71" y2="256" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#EEFFDF"/>
+      <stop offset=".30" stop-color="#90EFDA"/>
+      <stop offset=".52" stop-color="#39CECC"/>
+      <stop offset=".70" stop-color="#0797AA"/>
+      <stop offset="1" stop-color="#52DCCF"/>
+    </linearGradient>
+    <linearGradient id="right-pillar" x1="193" y1="0" x2="250" y2="256" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#A3F5E3"/>
+      <stop offset=".36" stop-color="#35D2CF"/>
+      <stop offset=".55" stop-color="#0094AA"/>
+      <stop offset="1" stop-color="#34D2C9"/>
+    </linearGradient>
+    <linearGradient id="wave" x1="10" y1="155" x2="244" y2="110" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#18B8C1"/>
+      <stop offset=".28" stop-color="#53D9D1"/>
+      <stop offset=".65" stop-color="#92EFDA"/>
+      <stop offset="1" stop-color="#BAF9DC"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(16 16)"><path d="M37 0C57.435 0 74 16.565 74 37V219C74 239.435 57.435 256 37 256C16.565 256 0 239.435 0 219V37C0 16.565 16.565 0 37 0Z" fill="url(#left-pillar)"/>
+    <path d="M219 0C239.435 0 256 16.565 256 37V219C256 239.435 239.435 256 219 256C198.565 256 182 239.435 182 219V37C182 16.565 198.565 0 219 0Z" fill="url(#right-pillar)"/>
+    <path d="M0 144C14 101 42 78 72 78C104 78 145 106 184 118C217 128 248 129 256 102C252 138 224 167 195 172C165 177 129 154 94 145C52 134 16 149 0 190Z" fill="url(#wave)"/></g>
+</svg>
+

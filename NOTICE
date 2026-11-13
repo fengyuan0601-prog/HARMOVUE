@@ -1,0 +1,14 @@
+HARMOVUE
+Copyright (C) 2026 HARMOVUE contributors
+
+The project's own application code, helper code, build scripts, documentation
+and supplied project artwork are licensed under GPL-3.0-or-later, unless a
+file explicitly states otherwise. See LICENSE.
+
+Third-party license texts in licenses/ and native/LICENSE.LGPL remain under
+their respective terms. Dependencies are not relicensed by this notice.
+See THIRD_PARTY_NOTICES.md and docs/NATIVE_RUNTIME.md.
+
+The initial public repository is a source release based on the 1.0.4
+application. It does not distribute the previous local binary installer,
+third-party runtime binaries, private Git history, media or personal data.
